@@ -1,0 +1,97 @@
+export const ui = {
+  nav: {
+    about: { th: 'เกี่ยวกับผม', en: 'About' },
+    experience: { th: 'ประสบการณ์', en: 'Experience' },
+    projects: { th: 'ผลงาน', en: 'Projects' },
+    fit: { th: 'R10302', en: 'R10302' },
+    skills: { th: 'ทักษะ', en: 'Skills' },
+    contact: { th: 'ติดต่อ', en: 'Contact' },
+    menu: { th: 'เปิดเมนู', en: 'Open menu' },
+  },
+  langSwitch: { th: 'English version', en: 'ภาษาไทย' },
+  hero: {
+    eyebrow: { th: 'MECHANICAL ENGINEER • MAINTENANCE & RELIABILITY', en: 'MECHANICAL ENGINEER • MAINTENANCE & RELIABILITY' },
+    title: { th: 'ดูแลเครื่องจักรให้เชื่อถือได้', en: 'Engineering reliability.' },
+    titleEm: { th: 'ปรับปรุงงานให้ดีขึ้นต่อเนื่อง', en: 'Improving performance.' },
+    projects: { th: 'ดูผลงานวิศวกรรม', en: 'View Engineering Projects' },
+    experience: { th: 'ประสบการณ์ทำงาน', en: 'Experience' },
+    resume: { th: 'ดาวน์โหลด Resume', en: 'Download Resume' },
+  },
+  stats: [
+    { value: { th: '~2 ปี', en: '~2 yrs' }, label: { th: 'Mechanical Maintenance', en: 'Mechanical Maintenance' } },
+    { value: { th: 'PM + CM', en: 'PM + CM' }, label: { th: 'ประสบการณ์หน้างานจริง', en: 'Hands-on Experience' } },
+    { value: { th: 'ผู้จัดการแผนก', en: 'Manager' }, label: { th: 'Operation & Leadership', en: 'Operation & Leadership' } },
+    { value: { th: 'ใบ กว.', en: 'กว. Licence' }, label: { th: 'ภาคีวิศวกร เครื่องกล', en: 'Associate Engineer, Mechanical' } },
+  ],
+  about: {
+    label: { th: '01 / ABOUT & CORE STRENGTHS', en: '01 / ABOUT & CORE STRENGTHS' },
+    title: { th: 'มองงานวิศวกรรมจากมากกว่าหนึ่งมุม', en: 'Engineering from more than one perspective.' },
+    lead: {
+      th: 'งานซ่อมบำรุงคือพื้นฐาน ส่วนประสบการณ์ด้านการเดินเครื่อง การบริหาร และเครื่องมือดิจิทัล ช่วยให้มองปัญหาได้กว้างและแก้ได้ตรงจุดขึ้น',
+      en: 'Maintenance is the foundation. Operation, leadership and digital capability expand how problems are understood and solved.',
+    },
+  },
+  experience: {
+    label: { th: '02 / EXPERIENCE', en: '02 / EXPERIENCE' },
+    title: { th: 'จากวิศวกรซ่อมบำรุง สู่การบริหารงานเดินเครื่อง', en: 'From maintenance engineer to operational leadership.' },
+    current: { th: 'ปัจจุบัน', en: 'CURRENT' },
+    taglines: [
+      { th: 'วางพื้นฐานงานซ่อมบำรุง', en: 'Built the maintenance foundation.' },
+      { th: 'เชื่อมเครื่องจักรเข้ากับกระบวนการผลิต', en: 'Connected equipment with the process.' },
+      { th: 'เพิ่มมุมมองด้านคน การวางแผน และธุรกิจ', en: 'Added people, planning and business context.' },
+    ],
+  },
+  projects: {
+    label: { th: '03 / SELECTED ENGINEERING PROJECTS', en: '03 / SELECTED ENGINEERING PROJECTS' },
+    title: { th: 'ปัญหา การตัดสินใจ และผลลัพธ์', en: 'Problems. Decisions. Results.' },
+    lead: {
+      th: 'ทุก Case Study เน้นเหตุผลทางวิศวกรรม มากกว่าการเขียนโปรแกรม',
+      en: 'Case studies emphasize engineering reasoning rather than software implementation.',
+    },
+    view: { th: 'ดูรายละเอียด', en: 'View Case Study' },
+    pending: { th: 'ผลลัพธ์: รอข้อมูลเพิ่ม', en: 'Result: pending input' },
+  },
+  fit: {
+    label: { th: '04 / POSITION FIT • R10302', en: '04 / POSITION FIT • R10302' },
+    title: { th: 'ความพร้อมสำหรับตำแหน่ง R10302', en: 'Fit for position R10302.' },
+    requirement: { th: 'ขอบเขตงาน / คุณสมบัติ', en: 'Requirement' },
+    evidence: { th: 'ประสบการณ์ที่เกี่ยวข้อง', en: 'Evidence' },
+    ref: { th: 'อ้างอิง', en: 'Ref.' },
+  },
+  skills: {
+    label: { th: '05 / SKILLS', en: '05 / SKILLS' },
+    title: { th: 'ทักษะที่ใช้ทำงานจริง', en: 'Skills used on the job.' },
+  },
+  mindset: {
+    label: { th: '06 / ENGINEERING MINDSET', en: '06 / ENGINEERING MINDSET' },
+    title: { th: 'แนวคิดในการทำงานซ่อมบำรุง', en: 'How I approach maintenance.' },
+    career: { th: 'CAREER DIRECTION', en: 'CAREER DIRECTION' },
+  },
+  credentials: {
+    label: { th: '07 / EDUCATION & CREDENTIALS', en: '07 / EDUCATION & CREDENTIALS' },
+    title: { th: 'การศึกษาและใบรับรอง', en: 'Education & credentials.' },
+    open: { th: 'ดูเอกสารขนาดเต็ม', en: 'Open full-size document' },
+  },
+  case: {
+    back: { th: 'กลับไปหน้าผลงาน', en: 'Back to portfolio' },
+    blocks: {
+      problem: { th: 'Problem · ปัญหา', en: 'Problem' },
+      analysis: { th: 'Analysis · วิเคราะห์', en: 'Engineering Analysis' },
+      action: { th: 'Action · การแก้ไข', en: 'Engineering Action' },
+      result: { th: 'Result · ผลลัพธ์', en: 'Result / Impact' },
+      learning: { th: 'Learning · บทเรียน', en: 'Engineering Learning' },
+    },
+    caution: { th: 'ข้อสังเกต', en: 'Interpretation note' },
+    methods: { th: 'TOOLS / METHODS', en: 'TOOLS / METHODS' },
+    evidence: { th: 'ภาพประกอบ', en: 'Evidence' },
+    prev: { th: 'ก่อนหน้า', en: 'Previous' },
+    next: { th: 'ถัดไป', en: 'Next' },
+    notFound: { th: 'ไม่พบโครงการนี้', en: 'Project not found.' },
+  },
+  footer: {
+    role: { th: 'Mechanical Engineer • Maintenance • Reliability', en: 'Mechanical Engineer • Maintenance • Reliability' },
+    contactMeta: { th: 'ขอเบอร์โทรศัพท์และ Resume ฉบับเต็มได้ทางอีเมล', en: 'Phone number and full resume available by email.' },
+    note: { th: 'ไม่มีการเปิดเผยข้อมูลภายในของบริษัท', en: 'Confidential company information intentionally excluded.' },
+  },
+  todo: { th: 'รอข้อมูลเพิ่มเติม', en: 'Awaiting candidate input' },
+}
