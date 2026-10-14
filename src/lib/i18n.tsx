@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect } from 'react'
-import { isTodo, TODO_TEXT, type Content, type L, type Lang } from '../types/content'
+import { isTodo, TODO_TEXT, type Content, type Group, type L, type Lang } from '../types/content'
 import { profile } from '../data/profile'
 import { ui } from '../data/ui'
 
@@ -55,9 +55,29 @@ export function Rich({ value }: { value: Content }) {
   const { t } = useLang()
   if (isTodo(value)) return <Todo />
   if (Array.isArray(value)) {
+    if (value.length && !('th' in value[0])) {
+      return (
+        <>
+          {(value as Group[]).map((group, i) => (
+            <div className="subgroup" key={i}>
+              {group.heading && <h3>{t(group.heading)}</h3>}
+              {group.text && <p>{t(group.text)}</p>}
+              {group.flow && (
+                <ol className="flow">
+                  {group.flow.map((step) => <li key={step.en}>{t(step)}</li>)}
+                </ol>
+              )}
+              {group.items && (group.ordered
+                ? <ol className="numlist">{group.items.map((item) => <li key={item.en}>{t(item)}</li>)}</ol>
+                : <Rich value={group.items} />)}
+            </div>
+          ))}
+        </>
+      )
+    }
     return (
       <ul className="dashlist">
-        {value.map((item) => (
+        {(value as L[]).map((item) => (
           <li key={item.en}>{t(item)}</li>
         ))}
       </ul>

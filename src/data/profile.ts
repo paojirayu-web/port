@@ -1,7 +1,10 @@
 import type { L } from '../types/content'
+import photo from '../assets/images/profile.webp'
 
 export const profile = {
   name: { th: 'จิรายุ เจากสิกร', en: 'Jirayu' } satisfies L,
+  fullName: { th: 'จิรายุ เจากสิกร (เปา)', en: 'Jirayu (Pao)' } satisfies L,
+  photo,
   heroName: { th: 'จิรายุ เจากสิกร', en: 'JIRAYU' } satisfies L,
   role: { th: 'วิศวกรเครื่องกล', en: 'Mechanical Engineer' } satisfies L,
   focus: [
@@ -11,12 +14,8 @@ export const profile = {
     { th: 'Digital Improvement', en: 'Digital Improvement' },
   ] satisfies L[],
   statement: {
-    th: 'วิศวกรเครื่องกลที่มีประสบการณ์ตรงทั้งงานซ่อมบำรุง การเดินเตาเผาอุตสาหกรรม และการบริหารแผนก นำความรู้ด้านวิศวกรรมและเครื่องมือดิจิทัลมาใช้ยกระดับ Reliability ของเครื่องจักร ประสิทธิภาพการผลิต และการปรับปรุงงานอย่างต่อเนื่อง',
-    en: 'Mechanical Engineer with hands-on maintenance, kiln operation, and management experience, applying engineering and digital technology to improve equipment reliability, operational performance, and continuous improvement.',
-  } satisfies L,
-  preparedFor: {
-    th: 'คณะกรรมการสัมภาษณ์ กฟผ. · ตำแหน่งวิศวกร (วิศวกรรมเครื่องกล) · R10302',
-    en: 'EGAT interview panel · Engineer (Mechanical) · R10302',
+    th: 'วิศวกรเครื่องกลที่มีประสบการณ์ด้านงานซ่อมบำรุง การควบคุมกระบวนการเตาเผาอุตสาหกรรม และการบริหารแผนก มุ่งประยุกต์ใช้หลักวิศวกรรมและเทคโนโลยีดิจิทัลเพื่อเพิ่ม Reliability ของเครื่องจักร พัฒนาประสิทธิภาพการดำเนินงาน และขับเคลื่อนการปรับปรุงอย่างต่อเนื่อง',
+    en: 'Mechanical Engineer with experience in maintenance, industrial kiln process control, and department management, focused on applying engineering principles and digital technology to improve equipment reliability, enhance operational performance, and drive continuous improvement.',
   } satisfies L,
   currentRole: {
     th: 'ผู้จัดการแผนกเตาเผาเคลือบ (Glaze Kiln)',
@@ -34,23 +33,61 @@ export const profile = {
   email: 'paojirayu@gmail.com',
   location: { th: 'บ้านโป่ง ราชบุรี', en: 'Ban Pong, Ratchaburi' } satisfies L,
   resumeUrl: undefined as string | undefined,
-  hobbies: {
-    th: 'นอกเวลางานชอบวิ่ง (Fun Run 5 กม. และ Mini Marathon 10 กม.) วาดรูป และฟังเพลง',
-    en: 'Outside work I run 5 km fun runs and 10 km mini marathons, draw, and listen to music.',
-  } satisfies L,
 }
 
-export const about: L[] = [
+export const facts: { label: L; value: L }[] = [
+  { label: { th: 'ตำแหน่งปัจจุบัน', en: 'Current role' }, value: { th: 'ผู้จัดการแผนกเตาเผา, Crown Ceramics', en: 'Kiln Department Manager, Crown Ceramics' } },
+  { label: { th: 'ปริญญาตรี', en: 'Degree' }, value: { th: 'วศ.บ. เครื่องกล ม.ศิลปากร · GPA 3.53 (เกียรตินิยมอันดับ 2)', en: 'B.Eng. Mechanical, Silpakorn · GPA 3.53 (2nd-class honours)' } },
+  { label: { th: 'ที่อยู่', en: 'Based in' }, value: { th: 'บ้านโป่ง ราชบุรี', en: 'Ban Pong, Ratchaburi' } },
+]
+
+export const tools: { group: L; items: string[] }[] = [
+  { group: { th: 'Engineering Design', en: 'Engineering Design' }, items: ['SolidWorks', 'AutoCAD'] },
+  { group: { th: 'Data & Productivity', en: 'Data & Productivity' }, items: ['Microsoft Office', 'Google Workspace', 'AppSheet'] },
+  { group: { th: 'Digital & Automation', en: 'Digital & Automation' }, items: ['Cursor (AI IDE)', 'Claude', 'Codex', 'n8n', 'GitHub'] },
+]
+
+export const careerFlow: L[] = [
+  { th: 'Maintenance', en: 'Maintenance' },
+  { th: 'Kiln Operation', en: 'Kiln Operation' },
+  { th: 'Department Management', en: 'Department Management' },
+  { th: 'Maintenance & Reliability', en: 'Maintenance & Reliability' },
+]
+
+export const careerStages: { tag: string; title: string; body: L }[] = [
   {
-    th: 'ผมจบวิศวกรรมเครื่องกลจากมหาวิทยาลัยศิลปากร และเริ่มงานแรกในตำแหน่ง Mechanical Maintenance Engineer ที่ Crown Ceramics ผู้ผลิตภาชนะบนโต๊ะอาหารประเภท Stoneware ช่วงราว 2 ปีแรกรับผิดชอบงาน PM / CM แก้ปัญหาเครื่องจักร Breakdown และดูแลระบบไฮดรอลิก เครื่องขึ้นรูป และเตาเผาอุตสาหกรรม',
-    en: 'I studied mechanical engineering at Silpakorn University and started my career as a mechanical maintenance engineer at Crown Ceramics, a stoneware and tableware manufacturer. For about two years I handled preventive and corrective maintenance, breakdowns, hydraulic systems, forming machines, and industrial kilns.',
+    tag: 'MAINTENANCE',
+    title: 'Mechanical Maintenance Engineer',
+    body: {
+      th: 'เริ่มต้นทำงานในตำแหน่ง Mechanical Maintenance Engineer รับผิดชอบงาน PM, CM และ Breakdown Maintenance รวมถึงดูแลเครื่องจักรในกระบวนการผลิต ตั้งแต่เครื่องขึ้นรูปจนถึงเตาเผาอุตสาหกรรม',
+      en: 'Started as a Mechanical Maintenance Engineer, responsible for PM, CM, and breakdown maintenance, and for production equipment from forming machines to industrial kilns.',
+    },
   },
   {
-    th: 'หลังจากนั้นผมย้ายมาอยู่แผนกเตาเผา และได้รับมอบหมายให้ดูแลแผนก การได้มาอยู่ฝั่งผู้ใช้เครื่องจักรเองทำให้เห็นชัดว่าสภาพเครื่องจักรกระทบทั้งการเผา พลังงาน คุณภาพ คน และต้นทุน และได้เห็นว่าแรงกดดันจากการผลิตทำให้งานซ่อมถูกเร่งส่งกลับไปใช้งานก่อนตรวจสอบให้ครบได้อย่างไร',
-    en: 'I then moved into the kiln department and later became its head. Running the kilns showed me maintenance from the equipment user’s side: how equipment condition affects firing, energy, quality, people, and cost, and how production pressure can push a repair back into service before it is verified.',
+    tag: 'OPERATION & MANAGEMENT',
+    title: 'Kiln Operation & Department Management',
+    body: {
+      th: 'ต่อมาได้รับมอบหมายให้ดูแลงานด้านเตาเผาและบริหารแผนก การทำงานในมุมของผู้ใช้งานเครื่องจักร ทำให้เข้าใจว่าสภาพและความพร้อมของเครื่องจักรส่งผลต่อคุณภาพ พลังงาน ต้นทุน กระบวนการผลิต และการทำงานของทีมอย่างไร',
+      en: 'Later took charge of kiln operation and the department. Working from the equipment user’s side showed me how equipment condition and readiness affect quality, energy, cost, production, and the team’s work.',
+    },
   },
   {
-    th: 'เป้าหมายต่อจากนี้คือกลับมาทำงานสายซ่อมบำรุงเครื่องกลในระยะยาว ลงลึกด้าน Equipment Reliability และใช้ข้อมูลช่วยในการตัดสินใจทางวิศวกรรม',
-    en: 'My next step is a long-term career in mechanical maintenance, going deeper into equipment reliability and using data to support engineering decisions.',
+    tag: 'NEXT DIRECTION',
+    title: 'Maintenance & Equipment Reliability',
+    body: {
+      th: 'เป้าหมายต่อจากนี้คือการกลับมาพัฒนาตัวเองในสาย Mechanical Maintenance อย่างจริงจังในระยะยาว โดยมุ่งต่อยอดด้าน Equipment Reliability และนำข้อมูลมาใช้สนับสนุนการวิเคราะห์และตัดสินใจทางวิศวกรรม',
+      en: 'My goal from here is a long-term career in mechanical maintenance, building on equipment reliability and using data to support engineering analysis and decisions.',
+    },
+  },
+]
+
+export const competencies: { group: string; note?: L; items: string[] }[] = [
+  { group: 'Maintenance', items: ['Preventive Maintenance (PM)', 'Corrective Maintenance (CM)', 'Breakdown Maintenance', 'Troubleshooting'] },
+  { group: 'Equipment & Operation', items: ['Industrial Kiln', 'Hydraulic System', 'Production Machinery', 'Kiln Operation'] },
+  { group: 'Improvement & Reliability', items: ['Root Cause Analysis', 'Lean Improvement', 'Reliability Improvement', 'Energy Improvement'] },
+  {
+    group: 'Engineering Data',
+    note: { th: 'ข้อมูลเพื่อสนับสนุนการตัดสินใจทางวิศวกรรม', en: 'Data for engineering decisions' },
+    items: ['Data Analysis', 'Condition Monitoring', 'Engineering Dashboard', 'Data-driven Decision Making'],
   },
 ]
