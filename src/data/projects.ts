@@ -26,6 +26,7 @@ import appsheetEditor from '../assets/images/projects/appsheet-editor.webp'
 import appsheetSheet from '../assets/images/projects/appsheet-sheet.webp'
 import appsheetApp from '../assets/images/projects/appsheet-app.webp'
 import appsheetLine from '../assets/images/projects/appsheet-line.webp'
+import appsheetLowStock from '../assets/images/projects/appsheet-low-stock.webp'
 import plankilnCover from '../assets/images/projects/plankiln-cover.webp'
 import plankilnOverview from '../assets/images/projects/plankiln-overview.webp'
 
@@ -810,6 +811,15 @@ export const projects: Project[] = [
         src: appsheetLine,
         alt: { th: 'ข้อความแจ้งเตือนการเบิกและเติมอะไหล่ในกลุ่ม LINE', en: 'LINE group messages announcing spare-part draws and restocks' },
         caption: { th: 'แจ้งเตือนเข้ากลุ่ม LINE (เบลออีเมลผู้ทำรายการ)', en: 'LINE alerts (operator emails blurred)' },
+        photo: true,
+      },
+      {
+        src: appsheetLowStock,
+        alt: { th: 'ข้อความ Chatbot ในกลุ่ม LINE แสดงรายการอะไหล่ที่ต้องสั่งซื้อ พร้อมยอดคงเหลือและ Minimum Stock', en: 'LINE chatbot message listing spare parts to reorder with remaining and minimum stock' },
+        caption: {
+          th: 'แจ้งเตือนอะไหล่ที่ต่ำกว่า Minimum Stock เข้ากลุ่ม LINE พร้อมยอดคงเหลือและค่าต่ำสุดของแต่ละรายการ',
+          en: 'LINE alert listing parts below minimum stock, with the remaining quantity and minimum for each item',
+        },
         photo: true,
       },
     ],
